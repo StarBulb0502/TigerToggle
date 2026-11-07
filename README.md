@@ -6,7 +6,7 @@
 
 ## 下载与使用
 
-在仓库的 [Releases（发布版本）](https://github.com/StarBulb0502/TigerToggle/releases/tag/v1.0.7)中下载 `v1.0.7` 的 `AppNetworkSwitch-1.0.7-Windows.zip`。解压后双击 `AppNetworkSwitch.exe` 即可打开。运行环境为 Windows 10 / 11 和 .NET Framework 4.8。
+在仓库的 [Releases（发布版本）](https://github.com/StarBulb0502/TigerToggle/releases/latest)中下载 `TigerToggle-1.0.8-Windows.zip`。解压后双击 `虎爪开关TigerToggle.exe` 即可打开。运行环境为 Windows 10 / 11 和 .NET Framework 4.8。
 
 1. 从下拉框选一个应用，或用「选择程序」定位它的 `.exe` 文件。
 2. 点击「阻止联网」，阅读提示并完成 Windows 管理员授权。
@@ -22,6 +22,6 @@
 
 ## 从源码构建
 
-在 Windows 上运行 `source\build.cmd`。脚本会调用 .NET Framework 编译器，在仓库根目录生成 `AppNetworkSwitch.exe`。源码使用 Windows Forms 界面和 Windows 防火墙系统接口。
+在 Windows 上运行 `source\build.cmd`。脚本会调用 .NET Framework 编译器，在仓库根目录生成 `虎爪开关TigerToggle.exe`。源码使用 Windows Forms 界面和 Windows 防火墙系统接口。
 
 程序启动时在本机扫描应用安装记录与常见目录，并读取当前防火墙规则。使用过程中，应用路径和规则保存在使用者自己的电脑上。

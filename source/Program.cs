@@ -7,15 +7,17 @@ using System.Text;
 using System.Threading;
 using System.Windows.Forms;
 
-[assembly: System.Reflection.AssemblyTitle("应用联网开关")]
-[assembly: System.Reflection.AssemblyProduct("App Network Switch")]
-[assembly: System.Reflection.AssemblyVersion("1.0.7.0")]
-[assembly: System.Reflection.AssemblyFileVersion("1.0.7.0")]
+[assembly: System.Reflection.AssemblyTitle(AppNetworkSwitch.Program.DisplayName)]
+[assembly: System.Reflection.AssemblyProduct(AppNetworkSwitch.Program.DisplayName)]
+[assembly: System.Reflection.AssemblyVersion("1.0.8.0")]
+[assembly: System.Reflection.AssemblyFileVersion("1.0.8.0")]
 
 namespace AppNetworkSwitch
 {
     internal static class Program
     {
+        internal const string DisplayName = "虎爪开关 TigerToggle";
+
         [STAThread]
         private static int Main(string[] args)
         {
@@ -57,7 +59,7 @@ namespace AppNetworkSwitch
                 if (args.Length > 0 && (args[0] == "--preview" || args[0] == "--diagnose"))
                     Console.Error.WriteLine(error.ToString());
                 else
-                    MessageBox.Show(error.Message, "应用联网开关", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show(error.Message, DisplayName, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return 1;
             }
         }

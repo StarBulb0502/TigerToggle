@@ -1,0 +1,16 @@
+/nologo
+/target:winexe
+/platform:anycpu
+/optimize+
+/win32manifest:app.manifest
+/win32icon:app.ico
+/resource:mascot.png,AppNetworkSwitch.Mascot
+/out:"..\虎爪开关TigerToggle.exe"
+/reference:System.Windows.Forms.dll
+/reference:System.Drawing.dll
+/reference:System.Core.dll
+/reference:Microsoft.CSharp.dll
+Program.cs
+Firewall.cs
+MainForm.cs
+ThemeControls.cs

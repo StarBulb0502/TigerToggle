@@ -125,7 +125,7 @@ namespace AppNetworkSwitch
         public MainForm(bool preview)
         {
             previewMode = preview;
-            Text = "应用联网开关 · v1.0.7";
+            Text = Program.DisplayName + " · v" + typeof(Program).Assembly.GetName().Version.ToString(3);
             Icon = Icon.ExtractAssociatedIcon(typeof(MainForm).Assembly.Location);
             ClientSize = new Size(760, 314);
             MinimumSize = new Size(720, 354);
@@ -157,7 +157,7 @@ namespace AppNetworkSwitch
             header.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100));
             foreach (int width in new[] { 56, 56, 56 }) header.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, width));
             header.Controls.Add(new Label {
-                Text = "应用联网开关", AutoSize = true,
+                Text = Program.DisplayName, AutoSize = true,
                 Font = new Font(Font.FontFamily, 18F, FontStyle.Bold), Margin = new Padding(0)
             }, 0, 0);
             var pathLink = new LinkLabel { Text = "路径", Dock = DockStyle.Fill, TextAlign = ContentAlignment.MiddleRight };
